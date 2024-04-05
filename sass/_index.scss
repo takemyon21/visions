@@ -78,6 +78,10 @@
     z-index: 0;
     height: calc(100% - 22px);
     object-fit: cover;
+
+    @include mq(md) {
+      height: calc(100% - 46px);
+    }
   }
 }
 
@@ -122,17 +126,21 @@
 .fv__title {
   margin-top: 24px;
   color: $font-color-gray;
+  padding-inline: 23px 31px;
   text-align: center;
 
   font-family: $font-family-jp;
   font-size: clamp(1.625rem, 0.4821rem + 5.7143vw, 1.875rem);
   font-weight: 700;
   line-height: 1.6; /* 48px */
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
   text-decoration: 3px solid underline $accent-green;
 
   @include mq(md) {
+    margin-top: 18px;
     text-align: left;
+    padding-inline: 0;
+    margin-left: -3px;
     font-size: clamp(1.875rem, 0.5179rem + 2.8274vw, 3.0625rem);
     font-weight: 700;
     line-height: 1.5; /* 73.5px */
@@ -141,9 +149,11 @@
 }
 
 .fv__sub-title {
+  margin-top: 5px;
   color: $font-color-gray;
 
   font-family: $font-family-jp;
+  padding-inline: 24px 32px;
 
   text-align: center;
 
@@ -154,6 +164,9 @@
 
   @include mq(md) {
     text-align: left;
+    margin-top: 3px;
+
+    padding-inline: 0;
     font-size: clamp(1.5rem, 1.0714rem + 0.8929vw, 1.875rem);
     font-weight: 700;
     letter-spacing: 0.6px;
@@ -168,6 +181,13 @@
   }
 }
 
+.hidden-sp {
+  display: none;
+
+  @include mq(md) {
+    display: inline;
+  }
+}
 .fv__text {
   max-width: 390px;
   margin-inline: auto;
@@ -183,6 +203,7 @@
   padding-inline: 24px 9px;
 
   @include mq(md) {
+    margin-top: 51px;
     font-size: clamp(1rem, 0.8571rem + 0.2976vw, 1.125rem);
     margin-inline: 0;
     padding-inline: 0;

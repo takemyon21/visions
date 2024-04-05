@@ -685,6 +685,11 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (min-width: 768px) {
+  .fv__image img {
+    height: calc(100% - 46px);
+  }
+}
 
 .fv__text-contents {
   display: block;
@@ -731,18 +736,22 @@ main {
 .fv__title {
   margin-top: 24px;
   color: #565956;
+  padding-inline: 23px 31px;
   text-align: center;
   font-family: "Noto Sans JP", sans-serif;
   font-size: clamp(1.625rem, 0.4821rem + 5.7143vw, 1.875rem);
   font-weight: 700;
   line-height: 1.6; /* 48px */
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
   -webkit-text-decoration: 3px solid underline #609484;
           text-decoration: 3px solid underline #609484;
 }
 @media screen and (min-width: 768px) {
   .fv__title {
+    margin-top: 18px;
     text-align: left;
+    padding-inline: 0;
+    margin-left: -3px;
     font-size: clamp(1.875rem, 0.5179rem + 2.8274vw, 3.0625rem);
     font-weight: 700;
     line-height: 1.5; /* 73.5px */
@@ -751,8 +760,10 @@ main {
 }
 
 .fv__sub-title {
+  margin-top: 5px;
   color: #565956;
   font-family: "Noto Sans JP", sans-serif;
+  padding-inline: 24px 32px;
   text-align: center;
   font-size: clamp(1.25rem, -0.2289rem + 7.3943vw, 1.5735rem);
   font-weight: 700;
@@ -762,6 +773,8 @@ main {
 @media screen and (min-width: 768px) {
   .fv__sub-title {
     text-align: left;
+    margin-top: 3px;
+    padding-inline: 0;
     font-size: clamp(1.5rem, 1.0714rem + 0.8929vw, 1.875rem);
     font-weight: 700;
     letter-spacing: 0.6px;
@@ -774,6 +787,15 @@ main {
 @media screen and (min-width: 768px) {
   .hidden-pc {
     display: none;
+  }
+}
+
+.hidden-sp {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hidden-sp {
+    display: inline;
   }
 }
 
@@ -791,6 +813,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .fv__text {
+    margin-top: 51px;
     font-size: clamp(1rem, 0.8571rem + 0.2976vw, 1.125rem);
     margin-inline: 0;
     padding-inline: 0;
