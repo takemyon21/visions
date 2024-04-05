@@ -8,7 +8,7 @@
 
 .footer__inner {
   padding-block: 43px;
-  padding-inline: 63px 58px;
+  padding-inline: clamp(1.5rem, -9.6429rem + 55.7143vw, 3.9375rem) clamp(1.5rem, -8.2143rem + 48.5714vw, 3.625rem);
 
   display: grid;
   grid-template-areas:
@@ -182,6 +182,8 @@
 .footer__online-store-link {
   background-color: $accent-green;
   height: 100%;
+  margin-inline: auto;
+  max-width: 270px;
   padding: 26px 44px;
 
   font-size: 18px;

@@ -89,6 +89,11 @@ $font-family-brands: "Georama", sans-serif;
 body {
   font-size: 16px;
   line-height: 1.6;
+  background-color: $base-BG-white;
+}
+
+main {
+  padding-top: 80px;
 }
 
 .dummy__contents {
