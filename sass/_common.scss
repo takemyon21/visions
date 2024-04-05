@@ -1,0 +1,98 @@
+@use "sass:map";
+
+//////////
+// 共通 //
+//////////
+
+/////////////////////
+// ブレークポイント //
+/////////////////////
+
+// ブレークポイントの定義
+$layout-width-inner: 768px;
+
+// ブレークポイントのマップ型変数を定義
+$breakpoints: (
+  // 画面幅小さくなった時にレイアウトを変えるためのブレークポイント
+  "sss": "screen and (max-width: 390px)",
+  "ssp": "screen and (max-width: 499px)",
+
+  // 画面幅小さくなった時にレイアウトを変えるためのブレークポイント
+  "sp": "screen and (max-width: #{$layout-width-inner - 1px})",
+
+  // ブレークポイントはここ
+  "md": "screen and (min-width: #{$layout-width-inner})",
+
+  // 画面幅大きくなった時にレイアウトを変えるためのブレークポイントたち
+  "pc": "screen and (min-width: 1024px)",
+  "lg": "screen and (min-width: 1200px)",
+  "xl": "screen and (min-width: 1440px)",
+  "xxl": "screen and (min-width: 1600px)"
+) !default;
+
+//メディアクエリ用のmixinを定義。デフォルト値はmd
+@mixin mq($breakpoint: md) {
+  //map-get(マップ型変数, キー)で値を取得
+  @media #{map.get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+
+////////////
+// 色定義 //
+////////////
+// ベースカラー
+$base-BG-white: #fbfbfb;
+// メインカラー
+$main-BG-gray: #f1f4f3;
+
+// アクセントカラー
+$accent-green: #609484;
+$accent-brown: #948260;
+
+// ボタンホバー時
+$hover-button-green: #b0c9c1;
+$hover-button-brown: #c9c0b0;
+
+// その他
+$etc-gray01: #565956;
+$etc-gray02: #c7c7c7;
+$etc-white: #fff;
+
+// フォーム
+$form-red: #a51616;
+$form-pink: #ffefef;
+$form-frame: $etc-gray02;
+$form-focus: $accent-green;
+
+/////////////////////
+// タイポグラフィー //
+/////////////////////
+$font-color-gray: #565956;
+$font-color-white: #fff;
+$font-decoration-gold: #d1c1a1;
+
+//////////////
+// フォント //
+//////////////
+@font-face {
+  font-family: "Quentin";
+  src: url("../fonts/Quentin.woff2") format("woff2");
+}
+
+$font-family-jp: "Noto Sans JP", sans-serif;
+$font-family-en: "Roboto", sans-serif;
+$font-family-decoration: "Quentin", cursive;
+$font-family-brands: "Georama", sans-serif;
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.dummy__contents {
+  display: block;
+  width: 100%;
+  height: 2000px;
+}
