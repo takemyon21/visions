@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
+  >
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- from here is TDK -->
@@ -20,25 +22,53 @@
     <meta name="theme-color" content="#609484" />
 
     <!-- from here is favicon -->
-    <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon" />
+    <link
+      rel="shortcut icon"
+      href="./favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
     <link rel="icon" href="./favicon.ico" type="image/vnd.microsoft.icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-    <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon-16x16.png"
+      sizes="16x16"
+    />
 
     <!-- to here is favicon -->
     <link rel="canonical" href="④リンク（このページのURLを入力）" />
 
     <!-- from here is css -->
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style_nowa.css" />
     <!-- to here is css -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Georama&family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georama&family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    />
   </head>
 
   <body>
@@ -46,10 +76,20 @@
       <div class="header__inner">
         <div class="header__logo--wrapper">
           <div class="header__icon">
-            <img src="./img/common/header/header_icon.png" alt="visions" width="81" height="52" />
+            <img
+              src="./img/common/header/header_icon.png"
+              alt="visions"
+              width="81"
+              height="52"
+            />
           </div>
           <h1 class="header__logo">
-            <img src="./img/common/header/header_logo.png" alt="visions" width="202" height="51" />
+            <img
+              src="./img/common/header/header_logo.png"
+              alt="visions"
+              width="202"
+              height="51"
+            />
           </h1>
         </div>
 
@@ -77,8 +117,17 @@
           <div class="header-nav__online-store">
             <a href="#" class="header-nav__online-store-link">
               <div class="header-nav__cart">
-                <svg width="24" height="23" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20">
-                  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                <svg
+                  width="24"
+                  height="23"
+                  preserveAspectRatio="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  />
                 </svg>
               </div>
               <span>オンラインストア</span>
@@ -95,10 +144,20 @@
       <div id="js-drawer" class="drawer-nav">
         <div class="drawer-nav__logo--wrapper">
           <div class="drawer-nav__icon">
-            <img src="./img/common/header/header_drawer_icon.png" alt="visions" width="90" height="58" />
+            <img
+              src="./img/common/header/header_drawer_icon.png"
+              alt="visions"
+              width="90"
+              height="58"
+            />
           </div>
           <h1 class="drawer-nav__logo">
-            <img src="./img/common/header/header_drawer_logo.png" alt="visions" width="227" height="56" />
+            <img
+              src="./img/common/header/header_drawer_logo.png"
+              alt="visions"
+              width="227"
+              height="56"
+            />
           </h1>
         </div>
 
@@ -107,7 +166,12 @@
             <a href="#" class="drawer-nav__link">
               <span>オンラインストア</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
               </div>
             </a>
           </li>
@@ -115,7 +179,12 @@
             <a href="./news.html" class="drawer-nav__link">
               <span>ニュース</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
               </div>
             </a>
           </li>
@@ -123,7 +192,12 @@
             <a href="./business.html" class="drawer-nav__link">
               <span>事業紹介</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
               </div>
             </a>
           </li>
@@ -131,7 +205,12 @@
             <a href="./about.html" class="drawer-nav__link">
               <span>会社紹介</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
               </div>
             </a>
           </li>
@@ -139,7 +218,12 @@
             <a href="./recruit.html" class="drawer-nav__link">
               <span>採用情報</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
               </div>
             </a>
           </li>
@@ -147,7 +231,12 @@
             <a href="./contact.html" class="drawer-nav__link">
               <span>お問い合わせ</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
               </div>
             </a>
           </li>
@@ -168,17 +257,121 @@
     </header>
 
     <main class="main">
-      <div class="dummy__contents"></div>
+      <div class="about__fv">
+        <picture class="about__fv-picture">
+          <source
+            media="(max-width: 768px)"
+            srcset="./img/front-page/about/about-fv-sp.jpg"
+          />
+          <img src="./img/front-page/about/about-fv-pc.jpg" alt="about" />
+        </picture>
+        <div class="contant__fv-text">
+          <p class="about__fv-en">ABOUT US</p>
+          <h2 class="about__fv-jp">会社紹介</h2>
+        </div>
+      </div>
+
+      <div class="about__inner">
+        <div class="about__mission">
+          <div class="about__title">
+            <p class="about__title-en">MISSION</p>
+            <h3 class="about__title-jp">ミッション</h3>
+          </div>
+          <div class="about__mission-message">
+            <p class="about__mission-message-text">
+              当社はメガネを構成する部品や体験のすべてを検討し、<br
+                class="sp-hidden"
+              />地球上の資源の消費量を最小限に抑える方法を模索しています。<br />
+              業界全体の変化に影響を与えることを目指し、<br
+                class="sp-hidden"
+              />よりサステナブルな素材を使用したスタイルを徹底しています。
+            </p>
+          </div>
+        </div>
+        <div class="about__ceo">
+          <div class="about__ceo-container">
+            <div class="about__ceo-text">
+              <h4 class="about__ceo-message-title">
+                CEO 田中博史 <br class="pc-hidden" />メッセージ
+              </h4>
+              <p class="about__ceo-message">
+                我々はただのメガネ会社ではありません。<br />
+                メガネを通して地球のこと、環境のこと、未来のことを1番に考えている会社です。<br />
+                消費ということ自体に変革をもたらし、業界を索引できる存在として日々精進しています。
+              </p>
+            </div>
+            <div class="about__ceo-image">
+              <img
+                src="./img/front-page/about/about-ceo.jpg"
+                alt="CEO"
+                width="600"
+                height="800"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="about__company">
+          <div class="about__title">
+            <p class="about__title-en">COMPANY</p>
+            <h3 class="about__title-jp">会社概要</h3>
+          </div>
+          <div class="about__company-table">
+            <table class="company-table">
+              <tr>
+                <th>会社名</th>
+                <td class="company-table__td">株式会社VISIONS</td>
+              </tr>
+              <tr>
+                <th>代表取締役</th>
+                <td class="company-table__td">田中 博史</td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td class="company-table__td company-table__td-address">
+                  〒123-4567　<br class="pc-hidden" />東京都渋谷区千駄ヶ谷1234
+                </td>
+              </tr>
+              <tr>
+                <th>設立</th>
+                <td class="company-table__td">2017年1月</td>
+              </tr>
+              <tr>
+                <th>資本金</th>
+                <td class="company-table__td">1億円</td>
+              </tr>
+              <tr>
+                <th>連絡先</th>
+                <td class="company-table__td">info@visions.jp</td>
+              </tr>
+            </table>
+          </div>
+          <div
+            id="mapid"
+            class="about__leaflet"
+            style="width: 100%; height: 600px"
+          ></div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
       <div class="footer__inner">
         <div class="footer__logo--wrapper">
           <div class="footer__icon">
-            <img src="./img/common/footer/footer_icon.png" alt="visions" width="90" height="58" />
+            <img
+              src="./img/common/footer/footer_icon.png"
+              alt="visions"
+              width="90"
+              height="58"
+            />
           </div>
           <h2 class="footer__logo">
-            <img src="./img/common/footer/footer_logo.png" alt="visions" width="227" height="56" />
+            <img
+              src="./img/common/footer/footer_logo.png"
+              alt="visions"
+              width="227"
+              height="56"
+            />
           </h2>
         </div>
 
@@ -219,8 +412,16 @@
           <div class="footer__online-store">
             <a href="#" class="footer__online-store-link">
               <div class="footer__cart">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20">
-                  <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                <svg
+                  width="20"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  />
                 </svg>
               </div>
               <span>オンラインストア</span>
@@ -236,5 +437,23 @@
     </footer>
     <script src="./js/lib/jquery-3.7.1.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script>
+      var map = L.map("mapid").setView([35.6722, 139.6945], 17);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+      }).addTo(map);
+      var myIcon = L.icon({
+        iconUrl: "./img/front-page/about/map-pin.png",
+        iconSize: [33, 59.5],
+        iconAnchor: [22, 94],
+        popupAnchor: [-3, -76],
+      });
+
+      // マーカーを追加する
+      L.marker([35.6722, 139.6945], { icon: myIcon }).addTo(map);
+    </script>
   </body>
 </html>

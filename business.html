@@ -31,7 +31,8 @@
 
     <!-- from here is css -->
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/style_takemyon.css" />
     <!-- to here is css -->
 
     <!-- Google Fonts -->
@@ -77,7 +78,7 @@
           <div class="header-nav__online-store">
             <a href="#" class="header-nav__online-store-link">
               <div class="header-nav__cart">
-                <svg width="24" height="23" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20">
+                <svg width="24" height="23" preserveAspectRatio="none" class="h-5 w-5" viewBox="0 0 20 20">
                   <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                 </svg>
               </div>
@@ -97,9 +98,9 @@
           <div class="drawer-nav__icon">
             <img src="./img/common/header/header_drawer_icon.png" alt="visions" width="90" height="58" />
           </div>
-          <h1 class="drawer-nav__logo">
+          <h2 class="drawer-nav__logo">
             <img src="./img/common/header/header_drawer_logo.png" alt="visions" width="227" height="56" />
-          </h1>
+          </h2>
         </div>
 
         <ul class="drawer-nav__list">
@@ -154,13 +155,13 @@
         </ul>
 
         <div class="drawer-nav__sns-links">
-          <a href="#" class="drawer-nav__sns-link">
+          <a href="#" class="drawer-nav__sns-link" aria-label="Social Media Link">
             <i class="fa-brands fa-x-twitter header__twitter"></i>
           </a>
-          <a href="#" class="drawer-nav__sns-link">
+          <a href="#" class="drawer-nav__sns-link" aria-label="Social Media Link">
             <i class="fa-brands fa-instagram header__instagram"></i>
           </a>
-          <a href="#" class="drawer-nav__sns-link">
+          <a href="#" class="drawer-nav__sns-link" aria-label="Social Media Link">
             <i class="fa-brands fa-facebook-f header__facebook"></i>
           </a>
         </div>
@@ -168,7 +169,93 @@
     </header>
 
     <main class="main">
-      <div class="dummy__contents"></div>
+      <div class="business__fv business-fv">
+        <picture class="business-fv__image">
+          <source media="(max-width: 767px)" srcset="./img/front-page/business/sp/fv.jpg" />
+          <img src="./img/front-page/business/fv.jpg" alt="business" width="2880" height="1000" />
+        </picture>
+        <div class="business-fv__heading">
+          <h2 class="business-fv__title">BUSINESS</h2>
+          <p class="business-fv__sub-title">事業紹介</p>
+        </div>
+      </div>
+
+      <section class="action">
+        <div class="action__heading">
+          <h2 class="action__title">OUR ACTION</h2>
+          <p class="action__sub-title">会社の取り組み</p>
+        </div>
+
+        <div class="action__contents">
+          <div class="action__image">
+            <img src="./img/front-page/business/action-1.jpg" alt="環境への配慮" width="1560" height="1040" />
+            <h3 class="action__copy env">Environment</h3>
+          </div>
+          <div class="action__text-contents wide">
+            <h3 class="action__introduction">環境への配慮</h3>
+            <p class="action__introduction-text">フレームには再生ペットボトル、レンズも自然由来、梱包も再生段ボール。サステナブルな素材にこだわり、細部も徹底して環境に配慮しています。</p>
+          </div>
+        </div>
+        <div class="action__contents reverse">
+          <div class="action__image">
+            <img src="./img/front-page/business/action-2.jpg" alt="社会への貢献" width="1560" height="1040" />
+            <h3 class="action__copy">Contribution</h3>
+          </div>
+          <div class="action__text-contents">
+            <h3 class="action__introduction">社会への貢献</h3>
+            <p class="action__introduction-text">高品質を、最適な価格で、必要なすべての人のもとに。メガネの売上の一部は発展途上国に寄付される仕組みを作っています。</p>
+          </div>
+        </div>
+        <div class="action__contents">
+          <div class="action__image">
+            <img src="./img/front-page/business/action-3.jpg" alt="ユーザーに寄り添った商品開発" width="1560" height="1040" />
+            <h3 class="action__copy dev">Development</h3>
+          </div>
+          <div class="action__text-contents">
+            <h3 class="action__introduction">ユーザーに寄り添った商品開発</h3>
+            <p class="action__introduction-text dev">定期的にユーザーにヒアリングを重ね、常にユーザーのニーズにあった商品開発を心がけています。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand" id="brand">
+        <div class="brand__top-image">
+          <img src="./img/front-page/index/brand/brand_leaf_top.png" alt="Lunettes" width="921" height="672" />
+        </div>
+        <div class="brand__heading">
+          <h2 class="brand__title">BRAND</h2>
+          <p class="brand__sub-title">ブランド</p>
+        </div>
+
+        <div class="brand__contents">
+          <div class="brand__image">
+            <img src="./img/front-page/index/brand/brand.jpg" alt="Lunettes" width="728" height="1092" />
+          </div>
+          <div class="brand__text-contents">
+            <h3 class="brand__name">Lunettes</h3>
+            <p class="brand__name-sub">ルネット</p>
+            <p class="brand__text">
+              100%環境に配慮したサステナブルな素材で作成されたアイウェアブランド。<br />
+              2017年以来世界中で愛されています。
+            </p>
+            <div class="brand__online-store--wrapper">
+              <div class="brand__online-store">
+                <a href="#" class="brand__online-store-link">
+                  <div class="brand__cart">
+                    <svg width="20" height="20" class="h-5 w-5" viewBox="0 0 20 20">
+                      <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                    </svg>
+                  </div>
+                  <span>オンラインストア</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="brand__bottom-image">
+          <img src="./img/front-page/index/brand/brand_leaf_bottom.png" alt="Lunettes" width="921" height="672" />
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -185,13 +272,13 @@
         <div class="footer-sns__wrapper">
           <h3 class="footer__title">Visions公式SNS</h3>
           <div class="footer__sns-links">
-            <a href="#" class="footer__sns-link">
+            <a href="#" class="footer__sns-link" aria-label="Social Media Link">
               <i class="fa-brands fa-x-twitter footer__twitter"></i>
             </a>
-            <a href="#" class="footer__sns-link">
+            <a href="#" class="footer__sns-link" aria-label="Social Media Link">
               <i class="fa-brands fa-instagram footer__instagram"></i>
             </a>
-            <a href="#" class="footer__sns-link">
+            <a href="#" class="footer__sns-link" aria-label="Social Media Link">
               <i class="fa-brands fa-facebook-f footer__facebook"></i>
             </a>
           </div>
@@ -219,7 +306,7 @@
           <div class="footer__online-store">
             <a href="#" class="footer__online-store-link">
               <div class="footer__cart">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20">
+                <svg width="20" height="20" class="h-5 w-5" viewBox="0 0 20 20">
                   <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                 </svg>
               </div>
@@ -234,7 +321,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/lib/jquery-3.7.1.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/lib/jquery-3.7.1.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>

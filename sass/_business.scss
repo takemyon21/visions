@@ -1,1 +1,246 @@
 @use "common" as *;
+
+.business-fv {
+  position: relative;
+  height: 300px;
+  @include mq(md) {
+    height: 500px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.business-fv__heading {
+  position: absolute;
+  width: 100%;
+  content: "";
+  top: 113px;
+  @include mq(md) {
+    top: 212.5px;
+  }
+}
+
+.business-fv__title {
+  color: $font-color-white;
+  text-align: center;
+
+  /* common/h1-main */
+  font-family: $font-family-en;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1; /* 48px */
+  letter-spacing: 0.96px;
+}
+
+.business-fv__sub-title {
+  color: $font-color-white;
+  text-align: center;
+
+  /* common/h1-sub */
+  font-family: $font-family-jp;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5; /* 27px */
+  letter-spacing: 0.36px;
+}
+
+// action
+.action {
+  padding-block: 96px;
+}
+
+.action__title {
+  color: $accent-brown;
+  text-align: center;
+
+  /* common/h2-main */
+  font-family: $font-family-en;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1; /* 48px */
+  letter-spacing: 0.96px;
+}
+
+.action__sub-title {
+  color: $font-color-gray;
+  text-align: center;
+
+  /* common/h2-sub */
+  font-family: "Noto Sans JP";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+}
+
+.action__contents {
+  max-width: 1440px;
+  margin-inline: auto;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include mq(md) {
+    width: 100%;
+    gap: clamp(2rem, -0.7143rem + 5.6548vw, 4.375rem);
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &.reverse {
+    @include mq(md) {
+      flex-direction: row-reverse;
+      width: 100%;
+      gap: clamp(2rem, -0.7143rem + 5.6548vw, 4.375rem);
+
+      .action__text-contents {
+        padding: 0;
+
+        width: 100%;
+        margin-left: clamp(2rem, -6.0714rem + 16.8155vw, 9.0625rem);
+      }
+    }
+
+    .action__image {
+      .action__copy {
+        left: 9px;
+        @include mq(md) {
+          top: clamp(0.1875rem, -16.375rem + 22.0833vw, 3.5rem);
+          left: auto;
+          right: clamp(8.75rem, -133.125rem + 189.1667vw, 37.125rem);
+        }
+      }
+    }
+  }
+}
+
+.action__contents + .action__contents {
+  margin-top: 40px;
+}
+
+.action__image {
+  position: relative;
+  max-width: 390px;
+  height: 300px;
+  margin-inline: auto;
+  flex-shrink: 0;
+  overflow: hidden;
+
+  @include mq(md) {
+    overflow: visible;
+    flex-shrink: 0;
+    max-width: calc(780 / 1440 * 100%);
+    max-height: 520px;
+    height: 100%;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.action__copy {
+  position: absolute;
+  color: $font-decoration-gold;
+  width: 100%;
+  text-align: center;
+
+  /* SP/treat */
+  font-family: $font-family-decoration;
+  font-size: clamp(3.125rem, -0.3036rem + 17.1429vw, 3.875rem);
+  font-weight: 400;
+  line-height: 100%; /* 62px */
+  letter-spacing: 1.24px;
+  bottom: -3px;
+  // left: 5px;
+
+  @include mq(md) {
+    top: 85px;
+    // right: clamp(-28.8125rem, 147.8125rem + -196.25vw, -1.125rem);
+    // right: clamp(-28.8125rem, 26.2321rem + -61.1607vw, -3.125rem);
+    right: -583px;
+    left: auto;
+    bottom: auto;
+    font-size: clamp(2.75rem, 0.8929rem + 5.9524vw, 6.25rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 100px */
+    letter-spacing: 2px;
+
+    &.env {
+      right: clamp(-35.4375rem, 124.3125rem + -177.5vw, -8.8125rem);
+      top: clamp(0.3125rem, -24.6875rem + 33.3333vw, 5.3125rem);
+    }
+
+    &.dev {
+      right: clamp(-36.4375rem, 125.9375rem + -180.4167vw, -9.375rem);
+      top: clamp(0.3125rem, -30rem + 40.4167vw, 6.375rem);
+    }
+  }
+}
+
+.action__text-contents {
+  padding: 31px 17px 0;
+  max-width: calc(345px + 22.5px * 2);
+  width: 100%;
+  margin-inline: auto;
+  @include mq(md) {
+    padding: 0 30px 0 0;
+    // padding: clamp(0rem, -4.2857rem + 8.9286vw, 3.75rem) clamp(2rem, -0.7143rem + 5.6548vw, 4.375rem);
+    max-width: 660px;
+  }
+  &.wide {
+    padding: 31px 15px 0;
+    @include mq(md) {
+      padding: 0 30px 0 0;
+    }
+  }
+}
+
+.action__introduction {
+  color: $font-color-gray;
+  margin-top: 4px;
+
+  /* SP/h3 */
+  font-family: $font-family-jp;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.48px;
+
+  @include mq(md) {
+    margin-top: 0px;
+    font-size: clamp(1.25rem, 0.8214rem + 0.8929vw, 1.625rem);
+  }
+}
+
+.action__introduction-text {
+  margin-top: 25px;
+  color: $font-color-gray;
+
+  /* common/text */
+  font-family: $font-family-jp;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2; /* 32px */
+  letter-spacing: 0.8px;
+
+  @include mq(md) {
+    margin-top: 28px;
+    max-width: 440px;
+
+    &.dev {
+      margin-top: 27px;
+      line-height: 28px;
+      letter-spacing: 0.32px;
+    }
+  }
+}

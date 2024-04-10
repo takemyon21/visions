@@ -27,11 +27,11 @@
     <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16" />
 
     <!-- to here is favicon -->
-    <link rel="canonical" href="④リンク（このページのURLを入力）" />
+    <link rel="canonical" href="http://192.168.11.3:5500/recruit.html" />
 
     <!-- from here is css -->
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style_yuki.css" />
     <!-- to here is css -->
 
     <!-- Google Fonts -->
@@ -46,10 +46,10 @@
       <div class="header__inner">
         <div class="header__logo--wrapper">
           <div class="header__icon">
-            <img src="./img/common/header/header_icon.png" alt="visions" width="81" height="52" />
+            <img src="./img/common/header/header_icon.png" alt="visions" width="81" height="52" decoding="async" />
           </div>
           <h1 class="header__logo">
-            <img src="./img/common/header/header_logo.png" alt="visions" width="202" height="51" />
+            <img src="./img/common/header/header_logo.png" alt="visions" width="202" height="51" decoding="async" />
           </h1>
         </div>
 
@@ -91,13 +91,14 @@
           <span class="header__menu-line"></span>
         </span>
       </div>
+
       <div id="js-drawer" class="drawer-nav">
         <div class="drawer-nav__logo--wrapper">
           <div class="drawer-nav__icon">
-            <img src="./img/common/header/header_drawer_icon.png" alt="visions" width="90" height="58" />
+            <img src="./img/common/header/header_drawer_icon.png" alt="visions" width="90" height="58" decoding="async" />
           </div>
           <h1 class="drawer-nav__logo">
-            <img src="./img/common/header/header_drawer_logo.png" alt="visions" width="227" height="56" />
+            <img src="./img/common/header/header_drawer_logo.png" alt="visions" width="227" height="56" decoding="async" />
           </h1>
         </div>
 
@@ -106,7 +107,7 @@
             <a href="#" class="drawer-nav__link">
               <span>オンラインストア</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" decoding="async" />
               </div>
             </a>
           </li>
@@ -114,7 +115,7 @@
             <a href="./news.html" class="drawer-nav__link">
               <span>ニュース</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" decoding="async" />
               </div>
             </a>
           </li>
@@ -122,7 +123,7 @@
             <a href="./business.html" class="drawer-nav__link">
               <span>事業紹介</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" decoding="async" />
               </div>
             </a>
           </li>
@@ -130,7 +131,7 @@
             <a href="./about.html" class="drawer-nav__link">
               <span>会社紹介</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" decoding="async" />
               </div>
             </a>
           </li>
@@ -138,7 +139,7 @@
             <a href="./recruit.html" class="drawer-nav__link">
               <span>採用情報</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" decoding="async" />
               </div>
             </a>
           </li>
@@ -146,11 +147,12 @@
             <a href="./contact.html" class="drawer-nav__link">
               <span>お問い合わせ</span>
               <div class="drawer-nav__rect">
-                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" />
+                <img src="./img/common/header/header_drawer_rect.svg" alt="jump" width="12" height="19" decoding="async" />
               </div>
             </a>
           </li>
         </ul>
+
         <div class="drawer-nav__sns-links">
           <a href="#" class="drawer-nav__sns-link">
             <i class="fa-brands fa-x-twitter header__twitter"></i>
@@ -166,17 +168,167 @@
     </header>
 
     <main class="main">
-      <div class="dummy__contents"></div>
+      <!-- fv -->
+      <section class="fv">
+        <picture class="fv__img">
+          <source media="(min-width: 768px)" srcset="./img/front-page/recruit/bg-fv-recruit-pc.webp" width="2880" height="1000" />
+          <img src="./img/front-page/recruit/bg-fv-recruit-sp.webp" alt="写真:おしゃれなメガネ" width="780" height="600" decoding="async" />
+        </picture>
+        <div class="fv__inner">
+          <h2 class="section__title">
+            <span class="section__title-main">JOIN US</span>
+            <span class="section__title-sub">採用情報</span>
+          </h2>
+        </div>
+      </section>
+
+      <!-- message -->
+      <div class="message">
+        <div class="message__inner">
+          <h2 class="section__title section__title-accent">
+            <span class="section__title-main">MESSAGE</span>
+            <span class="section__title-sub">メッセージ</span>
+          </h2>
+          <p class="message__desc">
+            メガネを入り口に世界のあり方を変える。<br />
+            私たちと共にチャレンジして、世の中にインパクトを与える<br class="hidden-sp" />仲間との出会いを待っています。
+          </p>
+        </div>
+      </div>
+
+      <!-- recruit -->
+      <section class="recruit">
+        <picture class="recruit__img">
+          <source media="(min-width: 768px)" srcset="./img/front-page/recruit/bg-recruit-pc.webp" width="2880" height="1000" />
+          <img src="./img/front-page/recruit/bg-fv-recruit-sp.webp" alt="写真:ショーケースにたくさんのメガネが並んでいます" width="790" height="1616" decoding="async" />
+        </picture>
+        <div class="recruit__contents">
+          <ul class="recruit__list">
+            <!-- item-01 -->
+            <li class="recruit__item">
+              <div class="recruit__item-inner">
+                <h2 class="recruit__item-head">新卒採用</h2>
+                <p class="recruit__item-desc">インターンシッププログラム<br class="hidden-md" />の募集もしています。</p>
+                <div class="recruit__item-button">
+                  <a href="#" class="button button--small button--green">
+                    <span>詳細を見る</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                      <path d="M13 6.75L11.8828 7.83828L16.2422 12.2188H6.75V13.7812H16.2422L11.8828 18.1352L13 19.25L19.25 13L13 6.75Z" fill="white" />
+                      <path d="M13 23.9375C10.8368 23.9375 8.72212 23.296 6.92346 22.0942C5.12479 20.8924 3.72291 19.1842 2.89507 17.1856C2.06724 15.187 1.85064 12.9879 2.27267 10.8662C2.69469 8.74454 3.73639 6.79566 5.26602 5.26602C6.79566 3.73639 8.74454 2.69469 10.8662 2.27267C12.9879 1.85064 15.187 2.06724 17.1856 2.89507C19.1842 3.72291 20.8924 5.12479 22.0942 6.92346C23.296 8.72212 23.9375 10.8368 23.9375 13C23.9342 15.8998 22.7808 18.6799 20.7303 20.7303C18.6799 22.7808 15.8998 23.9342 13 23.9375ZM13 3.62501C11.1458 3.62501 9.33324 4.17484 7.79153 5.20498C6.24982 6.23512 5.04821 7.69929 4.33863 9.41235C3.62906 11.1254 3.44341 13.0104 3.80514 14.829C4.16688 16.6475 5.05976 18.318 6.37088 19.6291C7.682 20.9402 9.35246 21.8331 11.171 22.1949C12.9896 22.5566 14.8746 22.3709 16.5877 21.6614C18.3007 20.9518 19.7649 19.7502 20.795 18.2085C21.8252 16.6668 22.375 14.8542 22.375 13C22.3721 10.5145 21.3835 8.1316 19.6259 6.37408C17.8684 4.61655 15.4855 3.6279 13 3.62501Z" fill="white" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="recruit__item">
+              <div class="recruit__item-inner">
+                <h2 class="recruit__item-head">中途採用</h2>
+                <p class="recruit__item-desc">全ポジションで募集しています。</p>
+                <div class="recruit__item-button">
+                  <a href="#" class="button button--small button--gray">
+                    <span>詳細を見る</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                      <path d="M13 6.75L11.8828 7.83828L16.2422 12.2188H6.75V13.7812H16.2422L11.8828 18.1352L13 19.25L19.25 13L13 6.75Z" fill="white" />
+                      <path d="M13 23.9375C10.8368 23.9375 8.72212 23.296 6.92346 22.0942C5.12479 20.8924 3.72291 19.1842 2.89507 17.1856C2.06724 15.187 1.85064 12.9879 2.27267 10.8662C2.69469 8.74454 3.73639 6.79566 5.26602 5.26602C6.79566 3.73639 8.74454 2.69469 10.8662 2.27267C12.9879 1.85064 15.187 2.06724 17.1856 2.89507C19.1842 3.72291 20.8924 5.12479 22.0942 6.92346C23.296 8.72212 23.9375 10.8368 23.9375 13C23.9342 15.8998 22.7808 18.6799 20.7303 20.7303C18.6799 22.7808 15.8998 23.9342 13 23.9375ZM13 3.62501C11.1458 3.62501 9.33324 4.17484 7.79153 5.20498C6.24982 6.23512 5.04821 7.69929 4.33863 9.41235C3.62906 11.1254 3.44341 13.0104 3.80514 14.829C4.16688 16.6475 5.05976 18.318 6.37088 19.6291C7.682 20.9402 9.35246 21.8331 11.171 22.1949C12.9896 22.5566 14.8746 22.3709 16.5877 21.6614C18.3007 20.9518 19.7649 19.7502 20.795 18.2085C21.8252 16.6668 22.375 14.8542 22.375 13C22.3721 10.5145 21.3835 8.1316 19.6259 6.37408C17.8684 4.61655 15.4855 3.6279 13 3.62501Z" fill="white" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- interview -->
+      <section class="interview">
+        <div class="interview__inner">
+          <h2 class="section__title section__title-accent">
+            <span class="section__title-main">INTERVIEW</span>
+            <span class="section__title-sub">社員インタビュー記事</span>
+          </h2>
+          <ul class="interview__list">
+            <!-- item-01 -->
+            <li class="interview__item">
+              <figure class="interview__item-inner">
+                <div class="interview__item-head">
+                  <h2 class="interview__item-person">01. 林麻美 / 企画ディレクター</h2>
+                  <div class="interview__item-img">
+                    <img src="./img/front-page/recruit/img-interview-1-pc.webp" alt="" width="320" height="240" decoding="async" />
+                  </div>
+                </div>
+                <figcaption class="interviewe__item-body">
+                  <p class="interview__item-desc">日々の業務や商品企画の流れについてご紹介します。</p>
+                  <div class="interview__item-button">
+                    <a href="./interviews.html" class="button button--large button--green">
+                      <span>もっと見る</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <path d="M13 6.75L11.8828 7.83828L16.2422 12.2188H6.75V13.7812H16.2422L11.8828 18.1352L13 19.25L19.25 13L13 6.75Z" fill="white" />
+                        <path d="M13 23.9375C10.8368 23.9375 8.72212 23.296 6.92346 22.0942C5.12479 20.8924 3.72291 19.1842 2.89507 17.1856C2.06724 15.187 1.85064 12.9879 2.27267 10.8662C2.69469 8.74454 3.73639 6.79566 5.26602 5.26602C6.79566 3.73639 8.74454 2.69469 10.8662 2.27267C12.9879 1.85064 15.187 2.06724 17.1856 2.89507C19.1842 3.72291 20.8924 5.12479 22.0942 6.92346C23.296 8.72212 23.9375 10.8368 23.9375 13C23.9342 15.8998 22.7808 18.6799 20.7303 20.7303C18.6799 22.7808 15.8998 23.9342 13 23.9375ZM13 3.62501C11.1458 3.62501 9.33324 4.17484 7.79153 5.20498C6.24982 6.23512 5.04821 7.69929 4.33863 9.41235C3.62906 11.1254 3.44341 13.0104 3.80514 14.829C4.16688 16.6475 5.05976 18.318 6.37088 19.6291C7.682 20.9402 9.35246 21.8331 11.171 22.1949C12.9896 22.5566 14.8746 22.3709 16.5877 21.6614C18.3007 20.9518 19.7649 19.7502 20.795 18.2085C21.8252 16.6668 22.375 14.8542 22.375 13C22.3721 10.5145 21.3835 8.1316 19.6259 6.37408C17.8684 4.61655 15.4855 3.6279 13 3.62501Z" fill="white" />
+                      </svg>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- item-02 -->
+            <li class="interview__item">
+              <figure class="interview__item-inner">
+                <div class="interview__item-head">
+                  <h2 class="interview__item-person">02. 渡邉尚人 / チームリーダー</h2>
+                  <div class="interview__item-img">
+                    <img src="./img/front-page/recruit/img-interview-2-pc.webp" alt="" width="320" height="240" decoding="async" />
+                  </div>
+                </div>
+                <figcaption class="interviewe__item-body">
+                  <p class="interview__item-desc">チームとして仕事するうえで大切にしてることについて紹介します。</p>
+                  <div class="interview__item-button">
+                    <a href="./interviews.html" class="button button--large button--green">
+                      <span>もっと見る</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <path d="M13 6.75L11.8828 7.83828L16.2422 12.2188H6.75V13.7812H16.2422L11.8828 18.1352L13 19.25L19.25 13L13 6.75Z" fill="white" />
+                        <path d="M13 23.9375C10.8368 23.9375 8.72212 23.296 6.92346 22.0942C5.12479 20.8924 3.72291 19.1842 2.89507 17.1856C2.06724 15.187 1.85064 12.9879 2.27267 10.8662C2.69469 8.74454 3.73639 6.79566 5.26602 5.26602C6.79566 3.73639 8.74454 2.69469 10.8662 2.27267C12.9879 1.85064 15.187 2.06724 17.1856 2.89507C19.1842 3.72291 20.8924 5.12479 22.0942 6.92346C23.296 8.72212 23.9375 10.8368 23.9375 13C23.9342 15.8998 22.7808 18.6799 20.7303 20.7303C18.6799 22.7808 15.8998 23.9342 13 23.9375ZM13 3.62501C11.1458 3.62501 9.33324 4.17484 7.79153 5.20498C6.24982 6.23512 5.04821 7.69929 4.33863 9.41235C3.62906 11.1254 3.44341 13.0104 3.80514 14.829C4.16688 16.6475 5.05976 18.318 6.37088 19.6291C7.682 20.9402 9.35246 21.8331 11.171 22.1949C12.9896 22.5566 14.8746 22.3709 16.5877 21.6614C18.3007 20.9518 19.7649 19.7502 20.795 18.2085C21.8252 16.6668 22.375 14.8542 22.375 13C22.3721 10.5145 21.3835 8.1316 19.6259 6.37408C17.8684 4.61655 15.4855 3.6279 13 3.62501Z" fill="white" />
+                      </svg>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <!-- item-03 -->
+            <li class="interview__item">
+              <figure class="interview__item-inner">
+                <div class="interview__item-head">
+                  <h2 class="interview__item-person">03. 内海花蓮 / 広報担当</h2>
+                  <div class="interview__item-img">
+                    <img src="./img/front-page/recruit/img-interview-3-pc.webp" alt="" width="320" height="240" decoding="async" />
+                  </div>
+                </div>
+                <figcaption class="interviewe__item-body">
+                  <p class="interview__item-desc">新商品をどのようにして世の中に知ってもらうかメディア戦略について紹介します。</p>
+                  <div class="interview__item-button">
+                    <a href="./interviews.html" class="button button--large button--green">
+                      <span>もっと見る</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                        <path d="M13 6.75L11.8828 7.83828L16.2422 12.2188H6.75V13.7812H16.2422L11.8828 18.1352L13 19.25L19.25 13L13 6.75Z" fill="white" />
+                        <path d="M13 23.9375C10.8368 23.9375 8.72212 23.296 6.92346 22.0942C5.12479 20.8924 3.72291 19.1842 2.89507 17.1856C2.06724 15.187 1.85064 12.9879 2.27267 10.8662C2.69469 8.74454 3.73639 6.79566 5.26602 5.26602C6.79566 3.73639 8.74454 2.69469 10.8662 2.27267C12.9879 1.85064 15.187 2.06724 17.1856 2.89507C19.1842 3.72291 20.8924 5.12479 22.0942 6.92346C23.296 8.72212 23.9375 10.8368 23.9375 13C23.9342 15.8998 22.7808 18.6799 20.7303 20.7303C18.6799 22.7808 15.8998 23.9342 13 23.9375ZM13 3.62501C11.1458 3.62501 9.33324 4.17484 7.79153 5.20498C6.24982 6.23512 5.04821 7.69929 4.33863 9.41235C3.62906 11.1254 3.44341 13.0104 3.80514 14.829C4.16688 16.6475 5.05976 18.318 6.37088 19.6291C7.682 20.9402 9.35246 21.8331 11.171 22.1949C12.9896 22.5566 14.8746 22.3709 16.5877 21.6614C18.3007 20.9518 19.7649 19.7502 20.795 18.2085C21.8252 16.6668 22.375 14.8542 22.375 13C22.3721 10.5145 21.3835 8.1316 19.6259 6.37408C17.8684 4.61655 15.4855 3.6279 13 3.62501Z" fill="white" />
+                      </svg>
+                    </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="footer__inner">
         <div class="footer__logo--wrapper">
           <div class="footer__icon">
-            <img src="./img/common/footer/footer_icon.png" alt="visions" width="90" height="58" />
+            <img src="./img/common/footer/footer_icon.png" alt="visions" width="90" height="58" decoding="async" />
           </div>
           <h2 class="footer__logo">
-            <img src="./img/common/footer/footer_logo.png" alt="visions" width="227" height="56" />
+            <img src="./img/common/footer/footer_logo.png" alt="visions" width="227" height="56" decoding="async" />
           </h2>
         </div>
 
@@ -232,7 +384,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/lib/jquery-3.7.1.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/lib/jquery-3.7.1.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>

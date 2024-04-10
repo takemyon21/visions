@@ -44,3 +44,62 @@ jQuery('#js-drawer a[href^="#"]').on("click", function (e) {
   document.removeEventListener("touchmove", noscroll);
   document.removeEventListener("wheel", noscroll);
 });
+
+//コンタクトフォームエラーチェック
+jQuery(function () {
+  if (jQuery("#contactForm").length) {
+    jQuery.validator.addMethod('zenkaku', function(value, element) {
+      return this.optional(element) || /^[^ -~｡-ﾟ]*$/.test(value);
+      }, "全角で入力してください。"
+     )
+    
+    jQuery("#contactForm").validate({
+      rules: {
+        name: {
+          required: true,
+          zenkaku: true,
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        email2: {
+          required: true,
+          email: true,
+          equalTo: '#email'
+        },
+        phone: {
+          required: true,
+          number: true
+        },
+        textarea: {
+          required: true
+        },
+      },
+      messages: {
+        name: {
+          required: '必須項目が入力されていません。'
+        },
+        email: {
+          required: '必須項目が入力されていません。',
+          email: '半角で入力してください。'
+        },
+        email2: {
+          required: '必須項目が入力されていません。',
+          email: '半角で入力してください。',
+          equalTo: '返信用メールアドレスと異なる内容が入力されています。'
+        },
+        phone: {
+          required: '必須項目が入力されていません。',
+          number: '半角で入力してください。'
+        },
+        textarea: {
+          required: '必須項目が入力されていません。'
+        },
+      },
+      errorPlacement: function(error, element){
+        error.insertAfter(element);
+      }
+    });
+  }
+});

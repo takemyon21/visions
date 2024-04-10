@@ -31,7 +31,8 @@
 
     <!-- from here is css -->
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/style_takemyon.css" />
     <!-- to here is css -->
 
     <!-- Google Fonts -->
@@ -77,7 +78,7 @@
           <div class="header-nav__online-store">
             <a href="#" class="header-nav__online-store-link">
               <div class="header-nav__cart">
-                <svg width="24" height="23" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20">
+                <svg width="24" height="23" preserveAspectRatio="none" class="h-5 w-5" viewBox="0 0 20 20">
                   <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                 </svg>
               </div>
@@ -97,9 +98,9 @@
           <div class="drawer-nav__icon">
             <img src="./img/common/header/header_drawer_icon.png" alt="visions" width="90" height="58" />
           </div>
-          <h1 class="drawer-nav__logo">
+          <h2 class="drawer-nav__logo">
             <img src="./img/common/header/header_drawer_logo.png" alt="visions" width="227" height="56" />
-          </h1>
+          </h2>
         </div>
 
         <ul class="drawer-nav__list">
@@ -154,13 +155,13 @@
         </ul>
 
         <div class="drawer-nav__sns-links">
-          <a href="#" class="drawer-nav__sns-link">
+          <a href="#" class="drawer-nav__sns-link" aria-label="Social Media Link">
             <i class="fa-brands fa-x-twitter header__twitter"></i>
           </a>
-          <a href="#" class="drawer-nav__sns-link">
+          <a href="#" class="drawer-nav__sns-link" aria-label="Social Media Link">
             <i class="fa-brands fa-instagram header__instagram"></i>
           </a>
-          <a href="#" class="drawer-nav__sns-link">
+          <a href="#" class="drawer-nav__sns-link" aria-label="Social Media Link">
             <i class="fa-brands fa-facebook-f header__facebook"></i>
           </a>
         </div>
@@ -193,45 +194,45 @@
           </div>
           <ul class="news__lists">
             <li class="news__item">
-              <a href="./article.html" class="news__link">
+              <a href="./articles.html" class="news__link">
                 <div class="news__image">
                   <img src="./img/front-page/index/news/news1.jpg" alt="news" width="636" height="358" />
                 </div>
-                <div class="news__text-contents">
+                <article class="news__text-contents">
                   <div class="news__text-head">
                     <time class="news__date" datetime="2024-03-15">2024.03.15</time>
                     <span class="news__tag">インタビュー</span>
                   </div>
-                  <p class="news__text">新商品プロダクトの裏側。デザイナー社員に初のインタビュー、Lunettesの開発秘話を語る。</p>
-                </div>
+                  <h3 class="news__text">新商品プロダクトの裏側。デザイナー社員に初のインタビュー、Lunettesの開発秘話を語る。</h3>
+                </article>
               </a>
             </li>
             <li class="news__item">
-              <a href="./article.html" class="news__link">
+              <a href="./articles.html" class="news__link">
                 <div class="news__image">
                   <img src="./img/front-page/index/news/news2.jpg" alt="news" width="636" height="358" />
                 </div>
-                <div class="news__text-contents">
+                <article class="news__text-contents">
                   <div class="news__text-head">
                     <time class="news__date" datetime="2024-03-10">2024.03.10</time>
                     <span class="news__tag">企業情報</span>
                   </div>
-                  <p class="news__text">「Lunettes」が2022年度 NICE DESIGN AWARDを受賞しました。</p>
-                </div>
+                  <h3 class="news__text">「Lunettes」が2022年度 NICE DESIGN AWARDを受賞しました。</h3>
+                </article>
               </a>
             </li>
             <li class="news__item">
-              <a href="./article.html" class="news__link">
+              <a href="./articles.html" class="news__link">
                 <div class="news__image">
                   <img src="./img/front-page/index/news/news3.jpg" alt="news" width="636" height="358" />
                 </div>
-                <div class="news__text-contents">
+                <article class="news__text-contents">
                   <div class="news__text-head">
                     <time class="news__date" datetime="2024-03-15">2024.03.01</time>
                     <span class="news__tag">商品情報</span>
                   </div>
-                  <p class="news__text">アプリリニューアルのお知らせ</p>
-                </div>
+                  <h3 class="news__text">アプリリニューアルのお知らせ</h3>
+                </article>
               </a>
             </li>
           </ul>
@@ -240,7 +241,91 @@
             <a href="./news.html" class="news__button-link">
               <span>すべて見る</span>
               <div class="news__button-arrow">
-                <img src="./img/front-page/index/news/news_arrow.svg" alt="" />
+                <img src="./img/front-page/index/news/news_arrow.svg" alt="すべて見る" width="26" height="25" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand" id="brand">
+        <div class="brand__top-image">
+          <img src="./img/front-page/index/brand/brand_leaf_top.png" alt="Lunettes" width="921" height="672" />
+        </div>
+        <div class="brand__heading">
+          <h2 class="brand__title">BRAND</h2>
+          <p class="brand__sub-title">ブランド</p>
+        </div>
+
+        <div class="brand__contents">
+          <div class="brand__image">
+            <img src="./img/front-page/index/brand/brand.jpg" alt="Lunettes" width="728" height="1092" />
+          </div>
+          <div class="brand__text-contents">
+            <h3 class="brand__name">Lunettes</h3>
+            <p class="brand__name-sub">ルネット</p>
+            <p class="brand__text">
+              100%環境に配慮したサステナブルな素材で作成されたアイウェアブランド。<br />
+              2017年以来世界中で愛されています。
+            </p>
+            <div class="brand__online-store--wrapper">
+              <div class="brand__online-store">
+                <a href="#" class="brand__online-store-link">
+                  <div class="brand__cart">
+                    <svg width="20" height="20" class="h-5 w-5" viewBox="0 0 20 20">
+                      <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                    </svg>
+                  </div>
+                  <span>オンラインストア</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="brand__bottom-image">
+          <img src="./img/front-page/index/brand/brand_leaf_bottom.png" alt="Lunettes" width="921" height="672" />
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__heading">
+          <h2 class="about__title">ABOUT US</h2>
+          <p class="about__sub-title">会社紹介</p>
+        </div>
+
+        <div class="about__contents">
+          <div class="about__image">
+            <img src="./img/front-page/index/about/about_office.jpg" alt="Officeの風景" width="1560" height="1040" />
+            <h3 class="about__copy">Introduction</h3>
+          </div>
+          <div class="about__text-contents">
+            <h3 class="about__introduction">会社紹介</h3>
+            <p class="about__introduction-text">誰でも気軽にオンラインでメガネを購入できる時代に。徹底した製作プロセスの可視化、そしてお客さまに対して真摯な姿勢を心がけています。</p>
+            <div class="about__button">
+              <a href="./about.html" class="about__button-link">
+                <span>もっと見る</span>
+                <div class="about__button-arrow">
+                  <img src="./img/front-page/index/about/about_arrow.svg" alt="もっと見る" width="26" height="25" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recruit">
+        <div class="recruit__heading">
+          <h2 class="recruit__title">JOIN US</h2>
+          <p class="recruit__sub-title">採用情報</p>
+        </div>
+        <div class="recruit__card">
+          <h3 class="recruit__card-title">一緒に働きませんか？</h3>
+          <p class="recruit__text">インターンシッププログラムの募集もしています。</p>
+          <div class="recruit__button">
+            <a href="./recruit.html" class="recruit__button-link">
+              <span>もっと見る</span>
+              <div class="recruit__button-arrow">
+                <img src="./img/front-page/index/recruit/recruit_arrow.svg" alt="もっと見る" width="26" height="25" />
               </div>
             </a>
           </div>
@@ -262,13 +347,13 @@
         <div class="footer-sns__wrapper">
           <h3 class="footer__title">Visions公式SNS</h3>
           <div class="footer__sns-links">
-            <a href="#" class="footer__sns-link">
+            <a href="#" class="footer__sns-link" aria-label="Twitter">
               <i class="fa-brands fa-x-twitter footer__twitter"></i>
             </a>
-            <a href="#" class="footer__sns-link">
+            <a href="#" class="footer__sns-link" aria-label="Instagram">
               <i class="fa-brands fa-instagram footer__instagram"></i>
             </a>
-            <a href="#" class="footer__sns-link">
+            <a href="#" class="footer__sns-link" aria-label="Facebook">
               <i class="fa-brands fa-facebook-f footer__facebook"></i>
             </a>
           </div>
@@ -296,7 +381,7 @@
           <div class="footer__online-store">
             <a href="#" class="footer__online-store-link">
               <div class="footer__cart">
-                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20">
+                <svg width="20" height="20" class="h-5 w-5" viewBox="0 0 20 20">
                   <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                 </svg>
               </div>
@@ -311,7 +396,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/lib/jquery-3.7.1.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/lib/jquery-3.7.1.min.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>

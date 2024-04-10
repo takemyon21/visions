@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head
+    prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"
+  >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- from here is TDK -->
+    <title>Visions</title>
+    <meta name="description" content="②説明（このページの説明を入力）" />
+    <!-- to here is TDK -->
+    <!-- from here is OGP -->
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="②説明（このページの説明を入力）" />
+    <meta property="og:title" content="Visions" />
+    <meta property="og:url" content="④リンク（このページのURLを入力）" />
+    <meta property="og:image" content="./img/ogp.jpg" />
+    <meta property="og:site_name" content="Visions" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- to here is OGP -->
+    <meta name="theme-color" content="#609484" />
+
+    <!-- from here is favicon -->
+    <link
+      rel="shortcut icon"
+      href="./favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
+    <link rel="icon" href="./favicon.ico" type="image/vnd.microsoft.icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon-16x16.png"
+      sizes="16x16"
+    />
+
+    <!-- to here is favicon -->
+    <link rel="canonical" href="④リンク（このページのURLを入力）" />
+
+    <!-- from here is css -->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style_nowa.css" />
+    <!-- to here is css -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Georama&family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo--wrapper">
+          <div class="header__icon">
+            <img
+              src="./img/common/header/header_icon.png"
+              alt="visions"
+              width="81"
+              height="52"
+            />
+          </div>
+          <h1 class="header__logo">
+            <img
+              src="./img/common/header/header_logo.png"
+              alt="visions"
+              width="202"
+              height="51"
+            />
+          </h1>
+        </div>
+
+        <nav class="header__nav header-nav">
+          <ul class="header-nav__list">
+            <!-- アクティブなページのリンクに下線つけるときはheader-nav__itemと同列にis-activeクラスをつける -->
+            <!-- <li class="header-nav__item is-active"> -->
+            <!-- としておくと下線つく -->
+            <li class="header-nav__item">
+              <a href="./news.html" class="header-nav__link">ニュース</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./business.html" class="header-nav__link">事業紹介</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./about.html" class="header-nav__link">会社紹介</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./recruit.html" class="header-nav__link">採用情報</a>
+            </li>
+            <li class="header-nav__item is-active">
+              <a href="./contact.html" class="header-nav__link">お問い合わせ</a>
+            </li>
+          </ul>
+          <div class="header-nav__online-store">
+            <a href="#" class="header-nav__online-store-link">
+              <div class="header-nav__cart">
+                <svg
+                  width="24"
+                  height="23"
+                  preserveAspectRatio="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  />
+                </svg>
+              </div>
+              <span>オンラインストア</span>
+            </a>
+          </div>
+        </nav>
+        <span id="js-drawer-open" class="header__menu">
+          <span class="header__menu-line"></span>
+          <span class="header__menu-line"></span>
+          <span class="header__menu-line"></span>
+        </span>
+      </div>
+
+      <div id="js-drawer" class="drawer-nav">
+        <div class="drawer-nav__logo--wrapper">
+          <div class="drawer-nav__icon">
+            <img
+              src="./img/common/header/header_drawer_icon.png"
+              alt="visions"
+              width="90"
+              height="58"
+            />
+          </div>
+          <h1 class="drawer-nav__logo">
+            <img
+              src="./img/common/header/header_drawer_logo.png"
+              alt="visions"
+              width="227"
+              height="56"
+            />
+          </h1>
+        </div>
+
+        <ul class="drawer-nav__list">
+          <li class="drawer-nav__item">
+            <a href="#" class="drawer-nav__link">
+              <span>オンラインストア</span>
+              <div class="drawer-nav__rect">
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
+              </div>
+            </a>
+          </li>
+          <li class="drawer-nav__item">
+            <a href="./news.html" class="drawer-nav__link">
+              <span>ニュース</span>
+              <div class="drawer-nav__rect">
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
+              </div>
+            </a>
+          </li>
+          <li class="drawer-nav__item">
+            <a href="./business.html" class="drawer-nav__link">
+              <span>事業紹介</span>
+              <div class="drawer-nav__rect">
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
+              </div>
+            </a>
+          </li>
+          <li class="drawer-nav__item">
+            <a href="./about.html" class="drawer-nav__link">
+              <span>会社紹介</span>
+              <div class="drawer-nav__rect">
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
+              </div>
+            </a>
+          </li>
+          <li class="drawer-nav__item">
+            <a href="./recruit.html" class="drawer-nav__link">
+              <span>採用情報</span>
+              <div class="drawer-nav__rect">
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
+              </div>
+            </a>
+          </li>
+          <li class="drawer-nav__item">
+            <a href="./contact.html" class="drawer-nav__link">
+              <span>お問い合わせ</span>
+              <div class="drawer-nav__rect">
+                <img
+                  src="./img/common/header/header_drawer_rect.svg"
+                  alt="jump"
+                  width="12"
+                  height="19"
+                />
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <div class="drawer-nav__sns-links">
+          <a href="#" class="drawer-nav__sns-link">
+            <i class="fa-brands fa-x-twitter header__twitter"></i>
+          </a>
+          <a href="#" class="drawer-nav__sns-link">
+            <i class="fa-brands fa-instagram header__instagram"></i>
+          </a>
+          <a href="#" class="drawer-nav__sns-link">
+            <i class="fa-brands fa-facebook-f header__facebook"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="error__inner">
+        <h2 class="error__main-en">404</h2>
+        <p class="error__main-jp">
+          お探しのページは<br class="pc-hidden" />見つかりませんでした。
+        </p>
+        <p class="error__text">
+          ご不便をおかけしてしまい申し訳ございません。<br />ページが変更・削除された可能性がございます。
+        </p>
+        <button type="submit" class="contact-button-white contact-button">
+          <div class="contact-button-white__text">トップページに戻る</div>
+          <div class="contact-button-white__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              viewBox="0 0 25 25"
+              fill="#609484"
+              class="contact-button-white__svg"
+            >
+              <path
+                d="M12.5 6.25L11.3828 7.33828L15.7422 11.7188H6.25V13.2812H15.7422L11.3828 17.6352L12.5 18.75L18.75 12.5L12.5 6.25Z"
+              />
+              <path
+                d="M12.5 23.4375C10.3368 23.4375 8.22212 22.796 6.42346 21.5942C4.62479 20.3924 3.22291 18.6842 2.39507 16.6856C1.56724 14.687 1.35064 12.4879 1.77267 10.3662C2.19469 8.24454 3.23639 6.29566 4.76602 4.76602C6.29566 3.23639 8.24454 2.19469 10.3662 1.77267C12.4879 1.35064 14.687 1.56724 16.6856 2.39507C18.6842 3.22291 20.3924 4.62479 21.5942 6.42346C22.796 8.22212 23.4375 10.3368 23.4375 12.5C23.4342 15.3998 22.2808 18.1799 20.2303 20.2303C18.1799 22.2808 15.3998 23.4342 12.5 23.4375ZM12.5 3.12501C10.6458 3.12501 8.83324 3.67484 7.29153 4.70498C5.74982 5.73512 4.54821 7.19929 3.83863 8.91235C3.12906 10.6254 2.94341 12.5104 3.30514 14.329C3.66688 16.1475 4.55976 17.818 5.87088 19.1291C7.182 20.4402 8.85246 21.3331 10.671 21.6949C12.4896 22.0566 14.3746 21.8709 16.0877 21.1614C17.8007 20.4518 19.2649 19.2502 20.295 17.7085C21.3252 16.1668 21.875 14.3542 21.875 12.5C21.8721 10.0145 20.8835 7.6316 19.1259 5.87408C17.3684 4.11655 14.9855 3.1279 12.5 3.12501Z"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__logo--wrapper">
+          <div class="footer__icon">
+            <img
+              src="./img/common/footer/footer_icon.png"
+              alt="visions"
+              width="90"
+              height="58"
+            />
+          </div>
+          <h2 class="footer__logo">
+            <img
+              src="./img/common/footer/footer_logo.png"
+              alt="visions"
+              width="227"
+              height="56"
+            />
+          </h2>
+        </div>
+
+        <div class="footer-sns__wrapper">
+          <h3 class="footer__title">Visions公式SNS</h3>
+          <div class="footer__sns-links">
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-x-twitter footer__twitter"></i>
+            </a>
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-instagram footer__instagram"></i>
+            </a>
+            <a href="#" class="footer__sns-link">
+              <i class="fa-brands fa-facebook-f footer__facebook"></i>
+            </a>
+          </div>
+        </div>
+
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="./news.html" class="footer-nav__link">ニュース</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="./business.html" class="footer-nav__link">事業紹介</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="./about.html" class="footer-nav__link">会社紹介</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="./recruit.html" class="footer-nav__link">採用情報</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="./contact.html" class="footer-nav__link">お問い合わせ</a>
+          </li>
+        </ul>
+
+        <div class="footer__online-store--wrapper">
+          <div class="footer__online-store">
+            <a href="#" class="footer__online-store-link">
+              <div class="footer__cart">
+                <svg
+                  width="20"
+                  height="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                  />
+                </svg>
+              </div>
+              <span>オンラインストア</span>
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          <small>
+            <span>&copy; Visions All rights reserved.</span>
+          </small>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/lib/jquery-3.7.1.min.js"></script>
+    <script src="./js/lib/jquery.validate.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

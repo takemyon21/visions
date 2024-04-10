@@ -82,9 +82,6 @@
   }
 }
 
-.header-nav {
-}
-
 .header-nav__list {
   display: none;
   @include mq(md) {
@@ -117,13 +114,10 @@
   letter-spacing: 0.32px;
 }
 
-.header-nav__online-store {
-}
-
 .header-nav__online-store-link {
   background-color: $accent-green;
   height: 100%;
-  padding-block: 30px;
+  padding-block: 29px;
   // 44~20px　※左が1px小さい
   padding-inline: calc(clamp(1.25rem, -0.4643rem + 3.5714vw, 2.75rem) - 1px) clamp(1.25rem, -0.4643rem + 3.5714vw, 2.75rem);
   display: flex;
@@ -148,15 +142,6 @@
     font-weight: 700;
     letter-spacing: 0.32px;
   }
-}
-
-.header-nav__cart {
-}
-
-.h-5 {
-}
-
-.w-5 {
 }
 
 .header__menu {
@@ -245,16 +230,6 @@
   margin-left: 17.5px;
 }
 
-.drawer-nav__icon {
-  img {
-  }
-}
-
-.drawer-nav__logo {
-  img {
-  }
-}
-
 .drawer-nav__list {
   padding-inline: 26px;
 }
@@ -270,9 +245,6 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px dotted $etc-white;
-}
-
-.drawer-nav__rect {
 }
 
 .drawer-nav__sns-links {
